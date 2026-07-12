@@ -1,12 +1,318 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AfriConnectSummit-Programme</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/logo.jpeg" />
   </head>
   <body>
+    <!--NAVIGATION-->
+    <header class="barre-navigation">
+      <div class="conteneur navigation-conteneur">
+        <div class="logo">
+          <img
+            src="./images/logo.jpeg"
+            alt="logo AfriConnect Summit"
+            height="40px"
+          />
+          <a href="index.html" class="logo-site"
+            >AfriConnect <br />
+            <span class="logo-annee">SUMMIT</span></a
+          >
+        </div>
+        <div class="m">
+          <nav>
+            <ul class="liens-navigation">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="programme.html" class="active">Programme</a></li>
+              <li><a href="intervenants.html">Intervenants</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="actions-navigation">
+            <button class="bascule-theme">
+              <i class="bi bi-moon" id="icone"></i>
+            </button>
+            <button class="menu-hamburger">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--HERO-->
+      <section class="hero-interne">
+        <div class="conteneur">
+          <p class="fil-ariane">
+            <a href="index.html">Accueil</a><span class="separateur">/</span
+            ><span class="courant">Programme</span>
+          </p>
+          <h1>Le programme des 3 jours</h1>
+          <p class="texte-section" style="margin-top: 14px; max-width: 600px">
+            Conférences, ateliers et tables rondes répartis sur trois journées
+            denses en apprentissage et en rencontres.
+          </p>
+        </div>
+      </section>
+      <!--ONGLETS PROGRAMME-->
+      <section class="section">
+        <div class="conteneur">
+          <div class="barre-onglets fade-in-up">
+            <button class="onglet actif" data-jour="jour1">
+              Jour 1 · 12 nov.
+            </button>
+            <button class="onglet" data-jour="jour2">Jour 2 · 13 nov.</button>
+            <button class="onglet" data-jour="jour3">Jour 3 · 14 nov.</button>
+          </div>
+          <!--JOUR 1-->
+          <div class="panneau-onglet actif fade-in-up" data-jour="jour1">
+            <table class="tableau-programme">
+              <thead>
+                <tr>
+                  <th>Heure</th>
+                  <th>Session</th>
+                  <th>Intervenant</th>
+                  <th>Salle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>09h00</td>
+                  <td>Ouverture officielle du sommet</td>
+                  <td>Comité d'organisation</td>
+                  <td>Auditorium Baobab</td>
+                </tr>
+                <tr>
+                  <td>10h00</td>
+                  <td>Keynote — L'IA au service de l'Afrique</td>
+                  <td>Aïcha Ndiaye</td>
+                  <td>Auditorium Baobab</td>
+                </tr>
+                <tr>
+                  <td>11h30</td>
+                  <td>Panel — Financer l'innovation africaine</td>
+                  <td>Youssef El Serviette</td>
+                  <td>Salle Teranga</td>
+                </tr>
+                <tr>
+                  <td>14h00</td>
+                  <td>Atelier — Cloud souverain et données</td>
+                  <td>Modou Lo</td>
+                  <td>Salle Sahel</td>
+                </tr>
+                <tr>
+                  <td>16h00</td>
+                  <td>Cocktail de bienvenue</td>
+                  <td>Tous les participants</td>
+                  <td>Terrasse Océan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--JOUR 2-->
+          <div class="panneau-onglet fade-in-up" data-jour="jour2">
+            <table class="tableau-programme">
+              <thead>
+                <tr>
+                  <th>Heure</th>
+                  <th>Session</th>
+                  <th>Intervenant</th>
+                  <th>Salle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>09h00</td>
+                  <td>Keynote — Design centré sur l'utilisateur africain</td>
+                  <td>Fatou Cissé</td>
+                  <td>Auditorium Baobab</td>
+                </tr>
+                <tr>
+                  <td>10h30</td>
+                  <td>Table ronde — Femmes et leadership tech</td>
+                  <td>Amara Diallo</td>
+                  <td>Salle Teranga</td>
+                </tr>
+                <tr>
+                  <td>12h00</td>
+                  <td>Atelier — Growth marketing en Afrique</td>
+                  <td>Gabriel Batistuta</td>
+                  <td>Salle Sahel</td>
+                </tr>
+                <tr>
+                  <td>14h30</td>
+                  <td>Session — Architecture cloud à grande échelle</td>
+                  <td>Thierno Ba</td>
+                  <td>Salle Sahel</td>
+                </tr>
+                <tr>
+                  <td>16h30</td>
+                  <td>Pitch startups panafricaines</td>
+                  <td>Samuel Eto</td>
+                  <td>Auditorium Baobab</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--JOUR 3-->
+          <div class="panneau-onglet fade-in-up" data-jour="jour3">
+            <table class="tableau-programme">
+              <thead>
+                <tr>
+                  <th>Heure</th>
+                  <th>Session</th>
+                  <th>Intervenant</th>
+                  <th>Salle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>09h00</td>
+                  <td>Keynote de clôture — L'Afrique de 2030</td>
+                  <td>Samuel Eto</td>
+                  <td>Auditorium Baobab</td>
+                </tr>
+                <tr>
+                  <td>10h30</td>
+                  <td>Atelier — UX Research à moindre coût</td>
+                  <td>Erling Haaland</td>
+                  <td>Salle Teranga</td>
+                </tr>
+                <tr>
+                  <td>12h00</td>
+                  <td>Panel — Data & souveraineté numérique</td>
+                  <td>Modou Lo</td>
+                  <td>Salle Sahel</td>
+                </tr>
+                <tr>
+                  <td>14h00</td>
+                  <td>Remise des prix AfriConnect Awards</td>
+                  <td>Comité d'organisation</td>
+                  <td>Auditorium Baobab</td>
+                </tr>
+                <tr>
+                  <td>16h00</td>
+                  <td>Clôture et networking final</td>
+                  <td>Tous les participants</td>
+                  <td>Terrasse Océan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!--THÉMATIQUES-->
+      <section class="section section-alt">
+        <div class="conteneur">
+          <div class="entete-section centre">
+            <span class="eyebrow">Au programme</span>
+            <h2 class="titre-section">4 grandes thématiques</h2>
+          </div>
+          <div class="grille-thematiques">
+            <div class="carte-thematique fade-in-up">
+              <div class="thematique-icone">🤖</div>
+              <div>
+                <h3>IA & Innovation</h3>
+                <p>
+                  Les usages concrets de l'intelligence artificielle adaptés aux
+                  réalités africaines.
+                </p>
+              </div>
+            </div>
+            <div class="carte-thematique fade-in-up">
+              <div class="thematique-icone">💼</div>
+              <div>
+                <h3>Entrepreneuriat</h3>
+                <p>
+                  Financement, structuration juridique et mise à l'échelle des
+                  startups africaines.
+                </p>
+              </div>
+            </div>
+            <div class="carte-thematique fade-in-up">
+              <div class="thematique-icone">🎨</div>
+              <div>
+                <h3>Design & UX</h3>
+                <p>
+                  Concevoir des produits numériques pensés pour les usages et
+                  les contextes locaux.
+                </p>
+              </div>
+            </div>
+            <div class="carte-thematique fade-in-up">
+              <div class="thematique-icone">☁️</div>
+              <div>
+                <h3>Data & Cloud</h3>
+                <p>
+                  Infrastructures, souveraineté des données et architectures
+                  cloud pour le continent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--PIED DE PAGE-->
+    <footer class="pied-de-page">
+      <div class="conteneur">
+        <div class="pied-grille">
+          <div class="pied-colonne">
+            <img
+              src="./images/logo.jpeg"
+              width="50px"
+              alt="logo"
+              style="margin-bottom: 20px"
+            />
+            <h4>
+              AfriConnect <br />
+              Summit
+            </h4>
+            <p>
+              Le rendez-vous annuel des acteurs de la tech africaine. Dakar,
+              Sénégal.
+            </p>
+            <h5 style="margin-top: 20px">Nos Réseaux sociaux</h5>
+            <div class="reseaux-sociaux">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="pied-colonne">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="programme.html">Programme</a></li>
+              <li><a href="intervenants.html">Intervenants</a></li>
+              <li><a href="contact.html">Inscription</a></li>
+            </ul>
+          </div>
+          <div class="pied-colonne">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="mailto:africonnectsummit.com">Africonnectsummit.com</a>
+              </li>
+              <li><a href="tel:+221776750434">+221 77 675 04 34</a></li>
+              <li>📍King Fahd Palace, Dakar</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pied-bas">
+          &copy; <span class="annee-courante">2026</span> AfriConnect Summit —
+          Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+    <button class="bouton-retour-haut">↑</button>
     <script src="js/main.js"></script>
   </body>
 </html>

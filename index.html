@@ -1,12 +1,353 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AfriConnectSummit-Accueil</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/logo.jpeg" />
+    <!-- flag icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
   </head>
   <body>
+    <!-- Navigation -->
+    <header class="barre-navigation">
+      <div class="conteneur navigation-conteneur">
+        <div class="logo">
+          <img
+            src="./images/logo.jpeg"
+            alt="logo AfriConnect Summit"
+            height="40px"
+          />
+          <a href="index.html" class="logo-site"
+            >AfriConnect <br /><span class="logo-annee">SUMMIT</span></a
+          >
+        </div>
+        <div class="m">
+          <nav>
+            <ul class="liens-navigation">
+              <li><a href="index.html" class="active">Accueil</a></li>
+              <li><a href="programme.html">Programme</a></li>
+              <li><a href="intervenants.html">Intervenants</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="actions-navigation">
+            <button class="bascule-theme">
+              <i class="bi bi-moon" id="icone"></i>
+            </button>
+            <button class="menu-hamburger">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Section HERO -->
+      <section class="hero">
+        <div class="conteneur hero-grille">
+          <div class="hero-contenu">
+            <h1 class="hero-titre fade-in-up">
+              Le continent se <span>connecte</span>, l'avenir se construit ici.
+            </h1>
+            <p class="hero-soustitre fade-in-up">
+              Trois jours pour rencontrer les bâtisseurs de la tech africaine :
+              développeurs, entrepreneurs et investisseurs réunis autour d'une
+              même ambition.
+            </p>
+            <p class="hero-lieu-dates fade-in-up">
+              📍 King Fahd Palace, Dakar, Sénégal — 12 au 14 novembre 2026
+            </p>
+            <div class="hero-boutons">
+              <a href="contact.html" class="bouton bouton-primaire fade-in-up"
+                >S'inscrire maintenant</a
+              >
+              <a
+                href="programme.html"
+                class="bouton bouton-secondaire fade-in-up"
+                >Voir le programme</a
+              >
+            </div>
+            <div class="compte-rebours fade-in-up">
+              <div class="compte-rebours-bloc">
+                <div class="compte-rebours-chiffre" id="rebours-jours">00</div>
+                <div class="compte-rebours-label">Jours</div>
+              </div>
+              <div class="compte-rebours-bloc">
+                <div class="compte-rebours-chiffre" id="rebours-heures">00</div>
+                <div class="compte-rebours-label">Heures</div>
+              </div>
+              <div class="compte-rebours-bloc">
+                <div class="compte-rebours-chiffre" id="rebours-minutes">
+                  00
+                </div>
+                <div class="compte-rebours-label">Minutes</div>
+              </div>
+              <div class="compte-rebours-bloc">
+                <div class="compte-rebours-chiffre" id="rebours-secondes">
+                  00
+                </div>
+                <div class="compte-rebours-label">Secondes</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visuel">
+            <img
+              src="./images/conference.png"
+              alt="Foule de participants lors d'une conférence technologique"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Chiffres clés -->
+      <section class="section section-alt fade-in-up">
+        <div class="conteneur">
+          <div>
+            <h2 class="titre-section" style="text-align: center">
+              Nos chiffres clés
+            </h2>
+          </div>
+          <div class="grille-statistiques">
+            <div class="carte-statistique fade-in-up">
+              <div class="statistique-chiffre" data-cible="1200">0</div>
+              <div class="statistique-label">Participants attendus</div>
+            </div>
+            <div class="carte-statistique fade-in-up">
+              <div class="statistique-chiffre" data-cible="48">0</div>
+              <div class="statistique-label">Intervenants experts</div>
+            </div>
+            <div class="carte-statistique fade-in-up">
+              <div class="statistique-chiffre" data-cible="3">0</div>
+              <div class="statistique-label">Jours d'événement</div>
+            </div>
+            <div class="carte-statistique fade-in-up">
+              <div class="statistique-chiffre" data-cible="12">0</div>
+              <div class="statistique-label">Pays représentés</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pourquoi participer -->
+      <section class="section">
+        <div class="conteneur">
+          <div class="entete-section centre fade-in-up">
+            <span class="eyebrow">Pourquoi venir</span>
+            <h2 class="titre-section">
+              Un sommet pensé pour créer des opportunités réelles
+            </h2>
+            <p class="texte-section">
+              AfriConnect Summit n'est pas qu'une conférence : c'est une
+              plateforme de rencontres et de collaborations concrètes.
+            </p>
+          </div>
+          <div class="grille-arguments">
+            <div class="carte-argument fade-in-up">
+              <div class="argument-icone">🤝</div>
+              <h3>Réseautage ciblé</h3>
+              <p>
+                Des sessions de mise en relation entre porteurs de projets et
+                investisseurs actifs sur le continent.
+              </p>
+            </div>
+            <div class="carte-argument fade-in-up">
+              <div class="argument-icone">🚀</div>
+              <h3>Innovation panafricaine</h3>
+              <p>
+                Découvrez les startups et technologies qui transforment
+                l'Afrique francophone et anglophone.
+              </p>
+            </div>
+            <div class="carte-argument fade-in-up">
+              <div class="argument-icone">🎓</div>
+              <h3>Ateliers pratiques</h3>
+              <p>
+                Des formations concrètes animées par des experts en IA, cloud,
+                design et financement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section Intervenants -->
+      <section class="section section-alt">
+        <div class="conteneur">
+          <div class="entete-section">
+            <span class="eyebrow">Ils seront présents</span>
+            <h2 class="titre-section">Intervenants vedettes</h2>
+          </div>
+          <div class="grille-intervenants">
+            <article class="carte-intervenant fade-in-up">
+              <div class="intervenant-photo">
+                <img src="./images/Aïcha Ndiaye.jpg" alt="Aïcha Ndiaye" />
+              </div>
+              <div class="intervenant-infos">
+                <h3 class="intervenant-nom">Aïcha Ndiaye</h3>
+                <p class="intervenant-titre">Fondatrice, TechForWomen</p>
+                <p class="intervenant-pays">
+                  <span class="fi fi-sn"></span> Sénégal
+                </p>
+              </div>
+            </article>
+            <article class="carte-intervenant fade-in-up">
+              <div class="intervenant-photo">
+                <img src="./images/Modou lo.jpg" alt="Modou lo" />
+              </div>
+              <div class="intervenant-infos">
+                <h3 class="intervenant-nom">Modou lo</h3>
+                <p class="intervenant-titre">
+                  Chief Data Officer, PanAfricaCloud
+                </p>
+                <p class="intervenant-pays">
+                  <span class="fi fi-gh"></span> Ghana
+                </p>
+              </div>
+            </article>
+            <article class="carte-intervenant fade-in-up">
+              <div class="intervenant-photo">
+                <img src="./images/Fatou Cissé.jpg" alt="Fatou Cissé" />
+              </div>
+              <div class="intervenant-infos">
+                <h3 class="intervenant-nom">Fatou Cissé</h3>
+                <p class="intervenant-titre">
+                  Designer produit senior, Orange Digital Ventures
+                </p>
+                <p class="intervenant-pays">
+                  <span class="fi fi-ci"></span> Côte d'Ivoire
+                </p>
+              </div>
+            </article>
+            <article class="carte-intervenant fade-in-up">
+              <div class="intervenant-photo">
+                <img
+                  src="./images/Youssef El Serviette.jpg"
+                  alt="Youssef El Serviette"
+                />
+              </div>
+              <div class="intervenant-infos">
+                <h3 class="intervenant-nom">Youssef El Amrani</h3>
+                <p class="intervenant-titre">Investisseur, Atlas Ventures</p>
+                <p class="intervenant-pays">
+                  <span class="fi fi-ma"></span> Maroc
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="bloc-cta-centre">
+            <a href="intervenants.html" class="bouton bouton-primaire"
+              >Voir tous les intervenants</a
+            >
+          </div>
+        </div>
+      </section>
+      <!--SPONSORS-->
+      <section class="section">
+        <div class="conteneur">
+          <div class="entete-section centre">
+            <span class="eyebrow">Ils nous soutiennent</span>
+            <h2 class="titre-section">Nos partenaires</h2>
+          </div>
+          <div class="grille-sponsors">
+            <div class="niveau-sponsor sponsor-or fade-in-up">
+              <span class="sponsor-badge">Sponsor en Or</span>
+              <div class="sponsor-nom">BaobabPay</div>
+            </div>
+            <div class="niveau-sponsor sponsor-argent fade-in-up">
+              <span class="sponsor-badge">Sponsor en Argent</span>
+              <div class="sponsor-nom">SahelCloud</div>
+            </div>
+            <div class="niveau-sponsor sponsor-argent fade-in-up">
+              <span class="sponsor-badge">Sponsor en Argent</span>
+              <div class="sponsor-nom">Teranga Bank</div>
+            </div>
+            <div class="niveau-sponsor sponsor-bronze fade-in-up">
+              <span class="sponsor-badge">Sponsor en Bronze</span>
+              <div class="sponsor-nom">Jokko Telecom</div>
+            </div>
+            <div class="niveau-sponsor sponsor-bronze fade-in-up">
+              <span class="sponsor-badge">Sponsor en Bronze</span>
+              <div class="sponsor-nom">Diaspora Ventures</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--PIED DE PAGE-->
+    <footer class="pied-de-page">
+      <div class="conteneur">
+        <div class="pied-grille">
+          <div class="pied-colonne">
+            <img
+              src="./images/logo.jpeg"
+              width="50px"
+              alt="logo"
+              style="margin-bottom: 20px"
+            />
+            <h4>
+              AfriConnect <br />
+              Summit
+            </h4>
+            <p>
+              Le rendez-vous annuel des acteurs de la tech africaine. Dakar,
+              Sénégal.
+            </p>
+            <h5 style="margin-top: 20px">Nos Réseaux sociaux</h5>
+            <div class="reseaux-sociaux">
+              <ul>
+                <li>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pied-colonne">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="programme.html">Programme</a></li>
+              <li><a href="intervenants.html">Intervenants</a></li>
+              <li><a href="contact.html">Inscription</a></li>
+            </ul>
+          </div>
+          <div class="pied-colonne">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="mailto:africonnectsummit.com"
+                  >Africonnectsummit@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+221776750434">+221 77 675 04 34</a></li>
+              <li>📍King Fahd Palace, Dakar</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pied-bas">
+          &copy; <span class="annee-courante"></span> AfriConnect Summit — Tous
+          droits réservés.
+        </div>
+      </div>
+    </footer>
+    <button class="bouton-retour-haut">↑</button>
     <script src="js/main.js"></script>
   </body>
 </html>
